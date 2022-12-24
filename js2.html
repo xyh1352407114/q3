@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>学生登陆</title>
+    <script>
+        function openWin() {
+            myWindow = window.open('', '', 'width=300,height=300');
+            myWindow.document.write('<form><h2>游客，你好！</h2><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit"  value="登录"> ');
+            myWindow.focus();
+            myWindow.document.body.style.backgroundColor = 'hsl(120,65%,75%)'
+        }
+
+        function o() {
+            myWindow = window.open('', '', 'width=300,height=300', );
+            myWindow.document.write('<form><h2>游客，你好！</h2><p>用户名：</p><input type="text" value="请输入账号"></br><p>密码：</p><input type="password" value=""></br><input type="submit" value="注册"> ');
+            myWindow.focus();
+            myWindow.document.body.style.backgroundColor = 'hsl(40, 100%, 50%)'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="text-center">
+        <div class="vert-center">
+            <input type="button" value="登录" onclick="openWin()">
+            <input type="button" value="注册" onclick="o()">
+            <p><b>请先进行注册后登陆</b></p>
+        </div>
+    </div>
+    <style>
+        .vert-center {
+            position: absolute;
+            top: 20px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            right: 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
